@@ -1,0 +1,4 @@
+average.o: average.cc average.h
+average-benchmark.o: .grading/average-benchmark.cc average.h \
+ .grading/timer.h
+average-test.o: .grading/average-test.cc average.h .grading/timer.h
