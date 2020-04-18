@@ -8,9 +8,9 @@ Result calculate(int ny, int nx, const float *data, int y0, int x0, int y1,
 	double value[3]={0,0,0};
 	for (int c=0;c<3;c++)
 		{
-		for (int x=x0;x<nx;x++)
+		for (int x=x0;x<x1;x++)
 		       	{
-			for (int y=y0;y<ny;y++)
+			for (int y=y0;y<y1;y++)
  				{ 
 					value[c]=value[c]+data[c+3*x+3*nx*y];
                         	  }
